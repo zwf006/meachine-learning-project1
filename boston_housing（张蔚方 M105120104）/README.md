@@ -88,5 +88,6 @@ Step 8.Drawing
 <img src="image/14.png" />
 
 ### My thoughts
-The Boston house price forecast is a classic regression model. After calculating various values of housing prices, we found that the housing price data varied so much that it needed to be standardized. The data set is divided into training set and test set, I chose three regression model to forecast the target data, found GradientBoostingRegressor model to predict the most accurate.
+1、The Boston house price forecast is a classic regression model. After calculating various values of housing prices, we found that the housing price data varied so much that it needed to be standardized. The data set is divided into training set and test set, I chose three regression model to forecast the target data, found GradientBoostingRegressor model to predict the most accurate.
+2、About Data Standardization：In real life, a target variable (y) can be thought of as being influenced and controlled by multiple characteristic variables (x), which will have different magnitudes and values. For example, if y=10^4*x1+10^2*x2+x3, x1 will affect the target variable to a greater extent than x2 or x3. By standardizing, it is possible to make different feature variables have the same scale so that the target variable can be controlled by multiple feature variables of the same size. In this way, when learning parameters using gradient descent, different features will have the same effect on the parameters.
 
